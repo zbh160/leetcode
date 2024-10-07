@@ -14,7 +14,6 @@ if __name__ == '__main__':
     last_name = input()
     print_full_name(first_name, last_name)
 
-    # String Functions
     fruits = ["apple", "banana", "cherry"]
     print(", ".join(fruits))  # Output: "apple, banana, cherry"
 
@@ -65,3 +64,39 @@ if __name__ == '__main__':
     name = "Alice"
     age = 30
     print("My name is {} and I am {} years old".format(name, age))
+
+    # Operator
+
+    str1 = "Hello"
+    str2 = "World"
+    result = str1 + " " + str2  # "Hello World"
+
+    repeated = "Ha" * 3  # "HaHaHa"
+
+    str1 = "Hello"
+    substring = "lo"
+    result = substring in str1  # True
+
+    # Example for string tricks
+    text = "  Hello, World!   "
+    # Reverse the string
+    print("Reversed:", text[::-1])
+
+    # Check for palindrome
+    print("Is palindrome:", is_palindrome("racecar"))
+
+    # Count vowels and consonants
+    vowels, consonants = count_vowels_consonants(text)
+    print(f"Vowels: {vowels}, Consonants: {consonants}")
+
+    # Remove duplicates
+    print("No duplicates:", remove_duplicates("banana"))
+
+    # Formatting
+    name = "Alice"
+    age = 30
+    print(f"My name is {name} and I am {age} years old.")
+
+    # Join a list
+    words = ["Hello", "World"]
+    print("Joined:", " ".join(words))
